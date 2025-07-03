@@ -17,7 +17,18 @@ const List = ({ data }) => {
           </tr>
         </thead>
         <tbody>
-          
+           <tr >
+                <td>1</td>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john.doe@example.com</td>
+                <td>1990-01-01</td>
+                <td>Male</td>
+                <td>
+                  <button>Edit</button>
+                  <button style={{ marginLeft: "5px" }}>Delete</button>
+                </td>
+              </tr>
         </tbody>
       </table>
     </div>
