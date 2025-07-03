@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./page.css"; 
+import Main from "./MainPage";
 
 const Pages = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +25,7 @@ const Pages = () => {
   };
 
   return (
-    <div className="form-container">
+    <div className="form-container" style={{display: "flex", justifyContent:"center"}}>
       <form className="form" onSubmit={handleSubmit}>
         <h2>User Information</h2>
         <div className="form-group">

@@ -2,3 +2,11 @@
   font-family: monospace;
 }
 
+
+.add{
+  padding: 6px 25px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 15px;
+  font-weight: 900;
+}

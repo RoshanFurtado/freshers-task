@@ -1,26 +1,63 @@
+/* Container for the whole page */
 .form-container {
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* Stack buttons + form vertically */
+  justify-content: flex-start; /* Start content from top */
+  align-items: center; /* Center horizontally */
   background: linear-gradient(135deg, #6e8efb, #a777e3);
 }
 
+/* Button group at the top */
+.button-group {
+  display: flex;
+  gap: 12px; /* Space between buttons */
+  min-width: 30vw;
+  padding: 50px 0 20px 0;
+}
+
+/* Style for each button */
+.button-group button {
+  background: #fff;
+  color: #6a30f1;
+  border: 2px solid #6a30f1;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+/* Active button styling */
+.button-group button.active {
+  background: #6a30f1;
+  color: #fff;
+}
+
+/* Hover effect */
+.button-group button:hover {
+  background: #6a30f1;
+  color: #fff;
+}
+
+/* Form container */
 .form {
   background: #fff;
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
-  width: 100%;
+   min-width: 30vw;
 }
 
+/* Heading inside the form */
 .form h2 {
   text-align: center;
   margin-bottom: 24px;
   color: #333;
 }
 
+/* Group for input + label */
 .form-group {
   margin-bottom: 18px;
   display: flex;
@@ -44,12 +81,13 @@
 .form-group input:focus,
 .form-group select:focus {
   outline: none;
-  border-color: #6e8efb;
+  border-color: #6a30f1;
   box-shadow: 0 0 0 2px rgba(110, 142, 251, 0.2);
 }
 
+/* Submit button */
 .submit-btn {
-  background: #6e8efb;
+  background: #6a30f1;
   color: #fff;
   border: none;
   padding: 12px;
